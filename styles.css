@@ -37,3 +37,11 @@
 /* Secondary Ashley photo (full-length, without cropping) */
 .story-photo img{display:block;width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;object-position:center center;background:#fff;}
 @media(max-width:640px){.story-photo img{width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;}}
+
+/* Ashley: segunda fotografía a marco completo sin zonas blancas */
+.story-photo {aspect-ratio: 941 / 1672; padding: 6px; overflow: hidden; box-sizing: border-box;}
+.story-photo > img {display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center center; background: transparent;}
+@media (max-width: 640px) {
+  .story-photo {padding: 5px;}
+  .story-photo > img {height: 100%; aspect-ratio: auto; object-fit: cover;}
+}
