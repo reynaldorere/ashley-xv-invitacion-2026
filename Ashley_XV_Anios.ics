@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//XV Ashley//Invitacion Web//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ashley-xv-20261225@invitacion.local
+DTSTAMP:20261018T120000Z
+DTSTART:20261225T220000Z
+SUMMARY:Mis XV años de Ashley
+LOCATION:Templo de San Francisco\, Calle Juárez 2\, San Miguel de Allende\, Guanajuato
+DESCRIPTION:Ashley te invita a sus XV años. Ceremonia a las 4:00 p. m. en Templo de San Francisco. Recepción a partir de las 6:00 p. m. en Salón los Pinos\, Calle Real Salida a Querétaro 173\, San Miguel de Allende. Confirmaciones: +52 415 133 0118.
+URL:https://maps.app.goo.gl/YrbFKmrPbvb2Tdg79?g_st=aw
+END:VEVENT
+END:VCALENDAR

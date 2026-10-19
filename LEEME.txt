@@ -1,0 +1,5 @@
+Invitación XV Ashley — versión nueva para publicación web (2026-10-19).
+La segunda fotografía es la imagen nueva que enviaste.
+Publica el CONTENIDO de esta carpeta, colocando index.html en la raíz del alojamiento web.
+Para WhatsApp: el enlace debe ser público y usar HTTPS.
+La música se reproduce después de pulsar Abrir mi invitación.
