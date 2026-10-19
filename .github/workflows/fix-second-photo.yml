@@ -1,0 +1,33 @@
+name: Ajustar marco segunda foto Ashley
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ajusta-foto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Hacer que la foto llene su marco
+        run: |
+          cat >> styles.css <<'CSS'
+          
+          /* Ashley: segunda fotografía a marco completo sin zonas blancas */
+          .story-photo {aspect-ratio: 941 / 1672; padding: 6px; overflow: hidden; box-sizing: border-box;}
+          .story-photo > img {display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center center; background: transparent;}
+          @media (max-width: 640px) {
+            .story-photo {padding: 5px;}
+            .story-photo > img {height: 100%; aspect-ratio: auto; object-fit: cover;}
+          }
+          CSS
+      - name: Guardar el ajuste en la invitación
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add styles.css
+          if ! git diff --cached --quiet; then
+            git commit -m "Ajustar segunda foto para llenar su marco sin bandas blancas"
+            git push
+          fi
